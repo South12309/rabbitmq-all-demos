@@ -19,12 +19,6 @@ public class Receiver {
         channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
         String topicName="";
         Scanner sc = new Scanner(System.in);
-        Thread consoleThread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        });
         System.out.println("Введите тему set_topic <тема>");
         String topic = sc.nextLine();
         String[] parts = topic.split(" ");
