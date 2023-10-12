@@ -1,19 +1,28 @@
+# shallow-backup
+
+[![Downloads](http://pepy.tech/badge/shallow-backup)](http://pepy.tech/count/shallow-backup)
+[![Build Status](https://travis-ci.com/alichtman/shallow-backup.svg?branch=master)](https://travis-ci.com/alichtman/shallow-backup)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1719da4d7df5455d8dbb4340c428f851)](https://www.codacy.com/app/alichtman/shallow-backup?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alichtman/shallow-backup&amp;utm_campaign=Badge_Grade)
+<!-- [![Coverage Status](https://coveralls.io/repos/github/alichtman/shallow-backup/badge.svg?branch=master)](https://coveralls.io/github/alichtman/shallow-backup?branch=master) -->
+
+`shallow-backup` lets you easily create lightweight backups of installed packages, applications, fonts and dotfiles, and automatically push them to a remote Git repository.
+
+![Shallow Backup GIF Demo](img/shallow-backup-demo.gif)
+
 Contents
 ========
 
- * [Проект](#project)
- * [Установка](#установка)
- * [Технологии](#технологии)
- * [Запуск](#запуск)
- * [Возможности](#возможности)
+ * [Why?](#why)
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [Git Integration](#git-integration)
+ * [What can I back up?](#what-can-i-back-up)
  * [Configuration](#configuration)
  * [Output Structure](#output-structure)
  * [Reinstalling Dotfiles](#reinstalling-dotfiles)
  * [Want to contribute?](#want-to-contribute)
 
-### Project
-
-Сервис работы с сущностями для логистической компании “Грузоперевозки” (api).
+### Why?
 
 I wanted a tool that allows you to:
 
@@ -28,7 +37,7 @@ And is incredibly fault tolerant and user-protective.
 
 `shallow-backup` is the only tool that checks all of those boxes.
 
-### Установка
+### Installation
 ---
 
 > **Warning**
@@ -56,7 +65,7 @@ $ pip3 install .
 
 If you are missing the dependencies, you will be guided to install them.
 
-### Технологии
+### Usage
 ---
 
 To start the interactive program, simply run `$ shallow-backup`.
@@ -100,7 +109,7 @@ Options:
 ```
 
 
-### Запуск
+### Git Integration
 ---
 
 **A Word of Caution**
@@ -117,7 +126,7 @@ NOTE: As of `v6.2`, `trufflehog` is run as a required precommit hook and will de
 
 Here's a `bash` script that I wrote to [automate my dotfile backup workflow](https://github.com/alichtman/scripts/blob/master/backup-and-update-dotfiles.sh). You can use this by placing it in your `$PATH`, making it executable, and running it.
 
-### Возможности
+### What can I back up?
 ---
 
 By default, `shallow-backup` backs these up.
