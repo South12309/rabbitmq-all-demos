@@ -1,18 +1,19 @@
-
 Contents
 ========
 
- * [Why?](#why)
- * [Installation](#installation)
- * [Usage](#usage)
- * [Git Integration](#git-integration)
- * [What can I back up?](#what-can-i-back-up)
+ * [Проект](#проект)
+ * [Установка](#установка)
+ * [Технологии](#технологии)
+ * [Запуск](#запуск)
+ * [Возможности](#возможности)
  * [Configuration](#configuration)
  * [Output Structure](#output-structure)
  * [Reinstalling Dotfiles](#reinstalling-dotfiles)
  * [Want to contribute?](#want-to-contribute)
 
-### Why?
+### Проект
+
+Сервис работы с сущностями для логистической компании “Грузоперевозки” (api).
 
 I wanted a tool that allows you to:
 
@@ -27,7 +28,7 @@ And is incredibly fault tolerant and user-protective.
 
 `shallow-backup` is the only tool that checks all of those boxes.
 
-### Installation
+### Установка
 ---
 
 > **Warning**
@@ -55,7 +56,7 @@ $ pip3 install .
 
 If you are missing the dependencies, you will be guided to install them.
 
-### Usage
+### Технологии
 ---
 
 To start the interactive program, simply run `$ shallow-backup`.
@@ -99,7 +100,7 @@ Options:
 ```
 
 
-### Git Integration
+### Запуск
 ---
 
 **A Word of Caution**
@@ -116,7 +117,7 @@ NOTE: As of `v6.2`, `trufflehog` is run as a required precommit hook and will de
 
 Here's a `bash` script that I wrote to [automate my dotfile backup workflow](https://github.com/alichtman/scripts/blob/master/backup-and-update-dotfiles.sh). You can use this by placing it in your `$PATH`, making it executable, and running it.
 
-### What can I back up?
+### Возможности
 ---
 
 By default, `shallow-backup` backs these up.
